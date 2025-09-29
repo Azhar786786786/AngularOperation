@@ -57,3 +57,19 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+## For updating new as well as existing project
+## ...or create a new repository on the command line
+echo "# AngularOperation" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:Azhar786786786/AngularOperation.git
+git push -u origin main
+
+## …or push an existing repository from the command line
+git remote add origin git@github.com:Azhar786786786/AngularOperation.git
+git branch -M main
+git push -u origin main

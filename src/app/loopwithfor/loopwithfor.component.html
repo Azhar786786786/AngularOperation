@@ -1,0 +1,22 @@
+<h1>loopwithfor works!</h1>
+<hr/>
+<h1>{{users[0]}}</h1>
+<h1>{{users[1]}}</h1>
+<h1>{{users[2]}}</h1>
+<h1>{{users[3]}}</h1>
+<h1>{{users[4]}}</h1>
+<h1>{{users[5]}}</h1>
+<h1>{{users[6]}}</h1>
+<h1>{{users[7]}}</h1>
+<h1>{{users[8]}}</h1>
+<hr/>
+@for(user of users; track user){
+<h2>{{user}}</h2>
+}
+<hr/>
+@for(item of students; track item;let id=$index)
+{
+  <h3>{{id+1}} {{item.name}} {{item.age}} {{item.email}}
+    <button (click)="getName(item.name)">Get Name</button>
+  </h3>
+}

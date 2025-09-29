@@ -1,0 +1,9 @@
+<p>album works!</p>
+<div class="album">
+  @for( pic of pictures; track pic) {
+  <div class="card">
+    <img [src]="pic.src" [alt]="pic.title" />
+    <h3>{{ pic.title }}</h3>
+  </div>
+  }
+</div>

@@ -1,0 +1,19 @@
+<hr/>
+<p>inputdetails works!</p>
+<h4>Get and set data value by input field</h4>
+<br/>
+<input type="text" value="{{name}}" (input)="getName($event)" placeholder="Enter your name" />
+<br/>
+<h4>User Name : {{name}}</h4>
+<h5>Display Name : {{displayName}}</h5>
+<br/><br/>
+<button (click)="showName()">Get Value</button>
+<button (click)="setName()">Set Value</button>
+<br/><br/>
+<br/>
+<input type="email" value="{{email}}" (input)="getEmail($event)" placeholder="Enter your email" />
+<br/>
+<h4>User Email : {{email}}</h4>
+<br/><br/>
+<button (click)="showEmail()">Get Value</button>
+<button (click)="setEmail()">Set Value</button>

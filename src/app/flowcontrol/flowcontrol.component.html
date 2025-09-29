@@ -1,0 +1,68 @@
+<hr />
+<br /><br />
+<p>flowcontrol works!</p>
+<div
+  style="
+    background-color: pink;
+    padding: 5px;
+    border-radius: 5px;
+    height: 300px;
+    width: 300px;
+  "
+>
+  good
+</div>
+<div
+  style="
+    background-color: rgb(213, 68, 92);
+    padding: 5px;
+    border-radius: 5px;
+    height: 300px;
+    width: 300px;
+  "
+>
+  Bad
+</div>
+
+<hr />
+
+<div class="container">
+  <div class="header-section">
+    <h1>Welcome to My Website</h1>
+  </div>
+
+  <div class="content-section">
+    <p>
+      This is a paragraph within the content section of the div container. The
+      `div` tag allows us to group related content and apply specific styles
+      using CSS.
+    </p>
+    <p>
+      You can use different classes or IDs to style multiple `div` elements
+      uniquely, creating distinct sections on your webpage.
+    </p>
+  </div>
+
+  <div class="footer-section">
+    <p>&copy; 2025 Div Example. All rights reserved.</p>
+  </div>
+</div>
+
+<hr />
+<button (click)="handleDisplayOut()">Hide Div</button>
+<button (click)="handleDisplayIn()">Show Div</button>
+<button (click)="handleDisplayToggle()">Toggle Div</button>
+<div class="card-container" (click)="handleDisplayIn()">
+  <h2>Card 1</h2>
+  <p>
+    This is a paragraph inside the first div. It's styled using the
+    .card-container class.
+  </p>
+</div>
+@if(display){
+<div class="promo-box">
+  <h2>Promotional Offer!</h2>
+  <p>This is a special promotional box with a different style.</p>
+  <p>The `div` tag acts as a container for this content.</p>
+</div>
+}

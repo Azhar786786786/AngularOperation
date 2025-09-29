@@ -1,0 +1,88 @@
+p{color:yellow; font-family: Arial, Helvetica, sans-serif;padding: 5px;font-size:xx-large;}
+
+/* CSS styles for the div elements */
+.container {
+  width: 80%; /* Sets the width of the container */
+  margin: 20px auto; /* Centers the div horizontally and adds vertical margin */
+  padding: 20px; /* Adds padding inside the div */
+  border: 2px solid #333; /* Adds a border */
+  background-color: #f0f0f0; /* Sets a light grey background color */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+.header-section {
+  background-color: #4CAF50; /* Green background for header */
+  color: white; /* White text color */
+  text-align: center; /* Centers the text */
+  padding: 10px; /* Adds padding */
+  margin-bottom: 15px; /* Adds space below the header */
+}
+
+.content-section {
+  font-family: Arial, sans-serif; /* Sets font family */
+  line-height: 1.6; /* Adjusts line spacing */
+  color: #555; /* Sets text color */
+}
+
+.footer-section {
+  background-color: #333; /* Dark background for footer */
+  color: white; /* White text color */
+  text-align: center; /* Centers the text */
+  padding: 10px; /* Adds padding */
+  margin-top: 15px; /* Adds space above the footer */
+  font-size: 0.9em; /* Smaller font size */
+}
+
+/* Basic styling for the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 20px;
+}
+
+/* Styling for the first div with class "card-container" */
+.card-container {
+  width: 300px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the second div with class "promo-box" */
+.promo-box {
+  width: 300px;
+  padding: 30px;
+  background-color: #2ecc71; /* Green color */
+  color: white;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for the headings inside the divs */
+.card-container h2 {
+  color: #333;
+  margin-top: 0;
+}
+
+.promo-box h2 {
+  color: white;
+  margin-bottom: 5px;
+}
+
+/* Styles for paragraphs inside the divs */
+.card-container p {
+  line-height: 1.5;
+  color: #666;
+}
+
+.promo-box p {
+  font-size: 14px;
+  margin-bottom: 0;
+}

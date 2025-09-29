@@ -1,0 +1,22 @@
+<hr/>
+<p>calculation works!</p>
+<h3>Name : {{name}}</h3>
+<h3>Reverse : {{nameReverse}}</h3>
+<button (click)="ReverseMethod('Azhar Hussain Khan')">Reverse</button>
+<br/>
+<button (click)="sayHi()">Say Hi</button>
+  <output>{{name}}</output>
+  <hr/>
+  <input type="search" (input)="name=$any($event.target).value">
+
+<output>{{name}}</output>
+<hr/>
+<input type="search" (input)="handleSearch($any($event.target).value)">
+
+<output>{{dt}}</output>
+<hr/>
+@if(num==0){ <p>Zero</p> }
+@else if(num>0){ <p>Positive</p>  }
+@else if(num<0){ <p>Negative</p>  }
+@else{ <p>Not a number</p>  }
+<hr/>

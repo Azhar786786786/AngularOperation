@@ -1,0 +1,73 @@
+<h1>flowcontrolwithelseif works!</h1>
+<hr />
+<br /><br />
+<button (click)="handleColor(1)">Red</button>
+<button (click)="handleColor(2)">Green</button>
+<button (click)="handleColor(3)">Blue</button>
+<button (click)="handleColor(4)">Yellow</button>
+<button (click)="handleColor(5)">Pink</button>
+<button (click)="handleColor(6)">Others</button>
+<input text="text" placeholder="enter your number for color" (input)="handleInput($event)">
+<br/><br/>
+@if(color==1){
+<div
+  style="
+    background-color: red;
+    padding: 5px;
+    border-radius: 5px;
+    height: 300px;
+    width: 300px;
+  "
+></div>
+} @else if(color==2) {
+<div
+  style="
+    background-color: green;
+    padding: 5px;
+    border-radius: 5px;
+    height: 300px;
+    width: 300px;
+  "
+></div>
+} @else if(color==3){
+<div
+  style="
+    background-color: blue;
+    padding: 5px;
+    border-radius: 5px;
+    height: 300px;
+    width: 300px;
+  "
+></div>
+} @else if(color==4){
+<div
+  style="
+    background-color: yellow;
+    padding: 5px;
+    border-radius: 5px;
+    height: 300px;
+    width: 300px;
+  "
+></div>
+} @else if(color==5){
+<div
+  style="
+    background-color: pink;
+    padding: 5px;
+    border-radius: 5px;
+    height: 300px;
+    width: 300px;
+  "
+></div>
+} @else{
+<div
+  style="
+    background-color: black;
+    padding: 5px;
+    border-radius: 5px;
+    height: 300px;
+    width: 300px;
+  "
+></div>
+}
+<hr />

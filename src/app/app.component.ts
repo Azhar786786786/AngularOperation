@@ -15,6 +15,8 @@ import { SignaloneComponent } from './signalone/signalone.component';
 import { SignalwithcomputedComponent } from './signalwithcomputed/signalwithcomputed.component';
 import { AlbumComponent } from './album/album.component';
 import { CalculationComponent } from './calculation/calculation.component';
+import { CalculasComponent } from './calculas/calculas.component';
+import { CalculatorComponent } from './calculator/calculator.component';
 
 @Component({
   selector: 'app-root',
@@ -32,7 +34,9 @@ LoopwithforComponent,
 SignaloneComponent,
 SignalwithcomputedComponent,
 AlbumComponent,
-CalculationComponent],
+CalculationComponent,
+CalculasComponent,
+CalculatorComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

@@ -17,6 +17,9 @@ import { AlbumComponent } from './album/album.component';
 import { CalculationComponent } from './calculation/calculation.component';
 import { CalculasComponent } from './calculas/calculas.component';
 import { CalculatorComponent } from './calculator/calculator.component';
+import { FormdataComponent } from './formdata/formdata.component';
+import { FormdatawithclassComponent } from './formdatawithclass/formdatawithclass.component';
+import { ForminputdataComponent } from './forminputdata/forminputdata.component';
 
 @Component({
   selector: 'app-root',
@@ -36,7 +39,10 @@ SignalwithcomputedComponent,
 AlbumComponent,
 CalculationComponent,
 CalculasComponent,
-CalculatorComponent],
+CalculatorComponent,
+FormdataComponent,
+FormdatawithclassComponent,
+ForminputdataComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

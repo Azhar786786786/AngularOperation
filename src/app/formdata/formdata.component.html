@@ -1,0 +1,23 @@
+<hr />
+<p>formdata works!</p>
+<hr />
+<h3>Two-way Binding (ngModel)</h3>
+
+<label> Name: <input [(ngModel)]="name" placeholder="Type your name" /> </label>
+
+<label style="margin-left: 12px">
+  Favorite:
+  <select [(ngModel)]="favorite">
+    <option value="Angular">Angular</option>
+    <option value="TypeScript">TypeScript</option>
+    <option value="AngularJS">AngularJS</option>
+    <option value="ViewJS">ViewJS</option>
+    <option value="NextJS">NextJS</option>
+    <option value="ReactJS">ReactJS</option>
+    <option value="JavaScript">JavaScript</option>
+    <option value="JQuery">JQuery</option>
+  </select>
+</label>
+
+<p>Hello {{ name || "friend" }}!</p>
+<p>Favorite: {{ favorite }}</p>

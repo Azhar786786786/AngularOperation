@@ -20,6 +20,9 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { FormdataComponent } from './formdata/formdata.component';
 import { FormdatawithclassComponent } from './formdatawithclass/formdatawithclass.component';
 import { ForminputdataComponent } from './forminputdata/forminputdata.component';
+import { ApidataComponent } from './apidata/apidata.component';
+import { ApidetailsComponent } from './apidetails/apidetails.component';
+import { ApidatadetailsComponent } from './apidatadetails/apidatadetails.component';
 
 @Component({
   selector: 'app-root',
@@ -42,7 +45,10 @@ CalculasComponent,
 CalculatorComponent,
 FormdataComponent,
 FormdatawithclassComponent,
-ForminputdataComponent],
+ForminputdataComponent,
+ApidataComponent,
+ApidetailsComponent,
+ApidatadetailsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

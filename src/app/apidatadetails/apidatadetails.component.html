@@ -1,0 +1,25 @@
+<hr />
+<p>apidatadetails works!</p>
+<hr />
+
+<h3>HttpClient3</h3>
+<button (click)="load()">Load Users</button>
+<p *ngIf="loading">Loading...</p>
+<p *ngIf="error" style="color: crimson">{{ error }}</p>
+<table>
+  <tr>
+    <th>Id</th>
+    <th>PostId</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Body</th>
+  </tr>
+
+  <tr *ngFor="let u of users">
+    <td>{{ u.id }}</td>
+    <td>{{ u.postId }}</td>
+    <td>{{ u.name }}</td>
+    <td>{{ u.email }}</td>
+    <td>{{ u.body }}</td>
+  </tr>
+</table>

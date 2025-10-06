@@ -1,0 +1,83 @@
+<hr />
+<p>apidetails works!</p>
+<hr />
+
+<h3>HttpClient2</h3>
+<button (click)="load()">Load Users</button>
+<p *ngIf="loading">Loading...</p>
+<p *ngIf="error" style="color: crimson">{{ error }}</p>
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>UserName</th>
+    <th>Email</th>
+    <th>Address</th>
+    <th>Phone</th>
+    <th>Website</th>
+    <th>Company</th>
+  </tr>
+
+  <tr *ngFor="let u of users">
+    <td>{{ u.id }}</td>
+    <td>{{ u.name }}</td>
+    <td>{{ u.username }}</td>
+    <td>{{ u.email }}</td>
+
+    <td>
+      <table>
+        <tr>
+          <th>Street</th>
+          <td>{{ u.address.street }}</td>
+        </tr>
+        <tr>
+          <th>Suite</th>
+          <td>{{ u.address.suite }}</td>
+        </tr>
+        <tr>
+          <th>City</th>
+          <td>{{ u.address.city }}</td>
+        </tr>
+        <tr>
+          <th>ZipCode</th>
+          <td>{{ u.address.zipcode }}</td>
+        </tr>
+        <tr>
+          <th>geo</th>
+          <td>
+            <table>
+              <tr>
+                <th>lat</th>
+                <td>{{ u.address.geo.lat }}</td>
+              </tr>
+              <tr>
+                <th>lng</th>
+                <td>{{ u.address.geo.lng }}</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+
+    <td>{{ u.phone }}</td>
+    <td>{{ u.website }}</td>
+
+    <td>
+      <table>
+        <tr>
+          <th>Name</th>
+          <td>{{ u.company.name }}</td>
+        </tr>
+        <tr>
+          <th>CatchPhrase</th>
+          <td>{{ u.company.catchPhrase }}</td>
+        </tr>
+        <tr>
+          <th>bs</th>
+          <td>{{ u.company.bs }}</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
